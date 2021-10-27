@@ -1,7 +1,7 @@
 .login {
   width: 100vw;
   height: 100vh;
-  background-color: #f0f2f5;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,12 +19,32 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
 }
+
+.etick{
+  width:10rem;
+  height: 2.8rem;
+  background-color: #f7c52a ;
+  display:inline-block;
+  position: relative;
+   top: 0.5rem;
+   left: -1.5rem;
+  border-radius: 9px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  transform: skewY(-11deg);
+  
+  
+}
+
 
 .loginLogo {
   font-size: 50px;
   font-weight: 800;
-  color: #1775ee;
+  color: black;
   margin-bottom: 10px;
 }
 
@@ -40,6 +60,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border: black solid 2px;
+    
 }
 
 .loginInput{
@@ -58,8 +80,8 @@
     height: 50px;
     border-radius: 10px;
     border: none;
-    background-color: #1775ee;
-    color: white;
+    background-color:#f7c52a;
+    color: black;
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
@@ -76,8 +98,8 @@
     height: 50px;
     border-radius: 10px;
     border: none;
-    background-color: #42b72a;
-    color: white;
+    background-color: #f7c52a;
+    color: black;
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;

@@ -13,7 +13,7 @@ export default function Register() {
   const handleClick = async (e) => {
     e.preventDefault();
     if (passwordAgain.current.value !== password.current.value) {
-      passwordAgain.current.setCustomValidity("Passwords don't match!");
+      passwordAgain.current.setCustomValidity("¡Las contraseñas no coinciden!");
     } else {
       const user = {
         username: username.current.value,
@@ -33,15 +33,16 @@ export default function Register() {
     <div className="login">
       <div className="loginWrapper">
         <div className="loginLeft">
-          <h3 className="loginLogo">Lamasocial</h3>
+          <h3 className="loginLogo">Intopcol</h3>
           <span className="loginDesc">
-            Connect with friends and the world around you on Lamasocial.
+          Chat corporativo de Intopcol.
           </span>
         </div>
         <div className="loginRight">
+        <div className="etick">Registro</div>
           <form className="loginBox" onSubmit={handleClick}>
             <input
-              placeholder="Username"
+              placeholder="Nombre de usuario"
               required
               ref={username}
               className="loginInput"
@@ -54,7 +55,7 @@ export default function Register() {
               type="email"
             />
             <input
-              placeholder="Password"
+              placeholder="Contraseña"
               required
               ref={password}
               className="loginInput"
@@ -62,16 +63,16 @@ export default function Register() {
               minLength="6"
             />
             <input
-              placeholder="Password Again"
+              placeholder="Contraseña de nuevo"
               required
               ref={passwordAgain}
               className="loginInput"
               type="password"
             />
             <button className="loginButton" type="submit">
-              Sign Up
+            Registrarse
             </button>
-            <button className="loginRegisterButton">Log into Account</button>
+            <button className="loginRegisterButton">Iniciar sesión</button>
           </form>
         </div>
       </div>
